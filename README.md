@@ -25,10 +25,13 @@
 python -m venv .venv
 source .venv/bin/activate   # Linux / macOS
 .venv\Scripts\activate      # Windows
+```
+---
 
 ## Генерация файлов
 ```bash
 python generator.py <template> <outdir> <length>
+```
 <template> — шаблон машины:
   invert — инвертирует 0 → 1 и 1 → 0
   erase — стирает все символы
@@ -39,6 +42,7 @@ python generator.py <template> <outdir> <length>
 ## Запуск симуляции
 ```bash
 python simulator.py <machine.txt> <tape.txt> <output.txt>
+```
   <machine.txt> — описание машины
   <tape.txt> — начальная лента
   <output.txt> — файл для записи результата
